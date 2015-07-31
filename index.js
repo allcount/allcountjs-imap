@@ -1,3 +1,5 @@
 exports.installModule = function (injection) {
-    console.log("Imap module install");
+    injection.bindMultiple('compileServices', [
+        'imapInboxIntegrationService'
+    ]);
 };
